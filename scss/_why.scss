@@ -1,0 +1,95 @@
+.why {
+   margin-bottom: 55px;
+   .title {
+      margin-bottom: 106px;
+   }
+   &__wrapper {
+      background: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
+   }
+   &__inner {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1460px;
+      margin: 0 auto;
+      padding: 0 10px;
+   }
+   &__phone {
+      position: absolute;
+      top: -54px;
+      left: 250px;
+      background-image: url("../images/phone.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 49px 42px 10px 42px;
+      min-width: 260px;
+      min-height: 469px;
+   }
+   &__phone-info {
+      padding-left: 20px;
+   }
+   &__title {
+      font-size: 11px;
+      line-height: 14px;
+   }
+
+   &__list {
+      list-style: none;
+      padding: 0;
+   }
+
+   &__list-item {
+      font-family: "Tenor Sans", sans-serif;
+      font-weight: 400;
+      margin-bottom: 15px;
+      font-size: 10px;
+      line-height: 12px;
+   }
+
+   &__imagebox {
+      margin-bottom: 15px;
+   }
+   &__info {
+      max-width: 900px;
+      margin: 0 0 0 auto;
+   }
+   &__text {
+      font-family: "Volkhov", sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17px;
+      color: #fff;
+      padding: 25px 0 25px 35px;
+      font-size: 13px;
+      line-height: 17px;
+      &:first-child {
+         background-image: url("../images/mazok-1.png");
+         background-repeat: no-repeat;
+         max-width: 633px;
+         padding-right: 290px;
+         background-size: 100% 100%;
+      }
+      &:nth-child(2) {
+         background-image: url("../images/mazok-2.png");
+         background-repeat: no-repeat;
+         max-width: 735px;
+         padding-right: 290px;
+         background-size: 100% 100%;
+      }
+      &:nth-child(3) {
+         background-image: url("../images/mazok-3.png");
+         background-repeat: no-repeat;
+         max-width: 850px;
+         padding-right: 290px;
+         background-size: 100% 100%;
+      }
+      &:last-child {
+         background-image: url("../images/mazok-4.png");
+         background-repeat: no-repeat;
+         max-width: 849px;
+         padding-right: 290px;
+         background-size: 100% 100%;
+      }
+   }
+}

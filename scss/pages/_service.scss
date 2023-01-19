@@ -1,0 +1,109 @@
+.service {
+   position: relative;
+   padding: 50px 0 87px;
+   color: #fff;
+   background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+   &__inner {
+      padding-left: 86px;
+   }
+   &__item-inner {
+      padding-left: 35px;
+   }
+
+   &__title {
+      margin-bottom: 80px;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 0;
+         background-image: url("../images/icons/title-decor-white.svg");
+         background-repeat: no-repeat;
+      }
+   }
+   &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 50px;
+      padding-left: 35px;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 0;
+         background-image: url("../images/icons/title-decor-white-sm.svg");
+         background-repeat: no-repeat;
+      }
+   }
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      &:nth-child(even) > .service__imagebox {
+         order: -1;
+      }
+   }
+   &__info-subtitle {
+      font-family: "Volkhov", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 19px;
+      margin-bottom: 15px;
+   }
+   &__info-box {
+      margin-bottom: 30px;
+   }
+
+   &__info-text {
+      position: relative;
+      padding-left: 46px;
+      max-width: 414px;
+   }
+
+   &__number {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      font-family: "Tenor Sans", sans-serif;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 58px;
+   }
+
+   &__info-list {
+      margin: 0;
+      padding: 0;
+   }
+
+   &__info-list-item {
+      list-style: none;
+      font-family: "Tenor Sans", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+   }
+
+   &__text {
+      max-width: 378px;
+   }
+
+   &__list {
+      padding: 13px;
+      margin-bottom: 80px;
+   }
+
+   &__btn {
+      background: #fff;
+      color: rgba(142, 45, 226, 1);
+   }
+   &__circle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      animation: circle infinite;
+   }
+}

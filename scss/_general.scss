@@ -1,0 +1,122 @@
+html {
+   box-sizing: border-box;
+   // font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+body {
+   font-family: "Tenor Sans", sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+button {
+   border: none;
+   outline: none;
+}
+.container {
+   max-width: 1255px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+.contact-link {
+   font-family: "Tenor Sans", sans-serif;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 13px;
+   padding: 13px 14px;
+   background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+   border-radius: 0px 20px;
+   cursor: pointer;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: color 0.3s;
+   border: 1px solid rgba(142, 45, 226, 1);
+   &:hover {
+      background: #fff;
+      color: rgba(142, 45, 226, 1);
+   }
+}
+.title {
+   margin: 0;
+   position: relative;
+   font-family: "Volkhov", sans-serif;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 39px;
+   padding-left: 60px;
+   text-transform: uppercase;
+   &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-image: url("../images/icons/title-decor.svg");
+      background-repeat: no-repeat;
+   }
+}
+.container-sm {
+   max-width: 1056px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+.social {
+   display: flex;
+   &__item {
+      & + .social__item {
+         margin-left: 20px;
+      }
+   }
+}
+.slide-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   background-color: rgba(196, 196, 196, 0.5);
+   border-radius: 100%;
+   padding: 7px 11px;
+   transition: background-color 0.2s;
+   &:hover {
+      background: none;
+      svg {
+         fill: #000;
+      }
+   }
+}
+.slide-btn-prev {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   z-index: 2;
+   svg {
+      fill: #fff;
+      transition: fill 0.2s;
+   }
+}
+.slide-btn-next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   z-index: 2;
+   svg {
+      fill: #fff;
+   }
+}
+.burger {
+   display: none;
+}

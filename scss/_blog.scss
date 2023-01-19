@@ -1,0 +1,74 @@
+.blog {
+   .swiper-pagination {
+      align-items: center;
+      bottom: 0;
+   }
+   .swiper-pagination-bullet {
+      width: 9px;
+      height: 9px;
+      background: radial-gradient(
+            104.37% 219.84% at 0.9% 2.98%,
+            rgba(0, 0, 0, 0.64) 0%,
+            rgba(255, 255, 255, 0) 100%
+         ),
+         linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+   }
+   .swiper-pagination-bullet-active {
+      width: 13px;
+      height: 13px;
+   }
+   padding: 100px 0;
+   &__title {
+      margin-bottom: 100px;
+   }
+   &__inner {
+      position: relative;
+   }
+   &__slider {
+      max-width: 1121px;
+   }
+
+   &__wrapper {
+      margin-bottom: 94px;
+   }
+
+   &__slide {
+      max-width: 260px;
+      margin-bottom: 25px;
+   }
+
+   &__imagebox {
+      width: 100%;
+      height: 193px;
+      border: 0 20px;
+      margin-bottom: 25px;
+   }
+
+   &__image {
+      max-width: 100%;
+      object-fit: contain;
+   }
+
+   &__subtitle {
+      font-family: "Volkhov", sans-serif;
+      font-size: 15px;
+      line-height: 19px;
+      font-weight: 700;
+      margin-bottom: 25px;
+   }
+
+   &__text {
+      font-size: 15px;
+      line-height: 18px;
+   }
+
+   &__btn-prev {
+      top: 30%;
+      transform: translateY("0");
+   }
+
+   &__btn-next {
+      top: 30%;
+      transform: translateY("0");
+   }
+}

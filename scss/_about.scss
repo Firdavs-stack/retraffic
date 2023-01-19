@@ -1,0 +1,66 @@
+.about {
+   margin-bottom: 101px;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 85px 56px 133px;
+      color: #fff;
+      background: radial-gradient(
+            104.37% 219.84% at 0.9% 2.98%,
+            rgba(0, 0, 0, 0.64) 0%,
+            rgba(255, 255, 255, 0) 100%
+         ),
+         linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+      border-radius: 20px 0;
+      overflow: hidden;
+   }
+
+   &__content {
+      padding-top: 102px;
+   }
+   &__title {
+      color: #fff;
+      margin-bottom: 83px;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 0;
+         background-image: url("../images/icons/title-decor-white.svg");
+         background-repeat: no-repeat;
+      }
+   }
+   &__info {
+      padding-left: 60px;
+   }
+   &__text {
+      max-width: 430px;
+      font-family: "Tenor Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 60px;
+   }
+
+   &__list {
+      list-style: none;
+      padding: 0;
+      font-family: "Volkhov", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 19px;
+   }
+
+   &__item {
+      margin-bottom: 26px;
+   }
+
+   &__imagebox {
+      margin-top: -55px;
+   }
+   &__image {
+      width: 406px;
+      height: 608px;
+   }
+}

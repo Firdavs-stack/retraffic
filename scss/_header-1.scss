@@ -1,0 +1,110 @@
+.header {
+   margin-bottom: 136px;
+}
+.header__top {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 11px 0;
+   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+   background-color: #fff;
+   z-index: 10;
+}
+.header__top-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__top-content {
+   min-width: 850px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__menu {
+   display: flex;
+}
+.header__menu-item {
+   position: relative;
+   list-style: none;
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: radial-gradient(
+            104.37% 219.84% at 0.9% 2.98%,
+            rgba(0, 0, 0, 0.64) 0%,
+            rgba(255, 255, 255, 0) 100%
+         ),
+         linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+      transition: all 0.2s;
+   }
+   &:hover {
+      &::after {
+         left: 0;
+         width: 100%;
+      }
+   }
+}
+.header__menu-item + .header__menu-item {
+   margin-left: 93px;
+}
+.header__menu-link {
+   font-family: "Tenor Sans", sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 18px;
+   text-decoration: none;
+   color: #000;
+}
+.header__content {
+   margin-top: 168px;
+}
+.header__content-inner {
+   position: relative;
+   background: radial-gradient(
+         104.37% 219.84% at 0.9% 2.98%,
+         rgba(0, 0, 0, 0.64) 0%,
+         rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+   border-radius: 20px 0;
+   display: flex;
+   justify-content: flex-end;
+   padding: 30px 0 95px 485px;
+   max-height: 504px;
+}
+.header__content-imagebox {
+   position: absolute;
+   top: -63px;
+   left: 50px;
+}
+.header__content-image {
+   border-radius: 20px 0;
+}
+.header__content-info {
+   font-family: "Volkhov", sans-serif;
+   font-weight: 700;
+   max-width: 670px;
+   color: #fff;
+}
+.header__title {
+   font-size: 50px;
+   line-height: 64px;
+   margin-bottom: 46px;
+}
+.header__subtitle {
+   font-size: 30px;
+   line-height: 42px;
+   margin-bottom: 50px;
+}
+.header__text {
+   font-family: "Tenor Sans", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+}
